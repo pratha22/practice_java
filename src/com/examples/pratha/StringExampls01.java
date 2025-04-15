@@ -14,13 +14,41 @@ public class StringExampls01 {
 
 	public static void main(String[] args) {
 
-		String str = "Pratha Budhrani Bhatia";
+		String str = " Pratha Budhrani Bhatia";
 		//printOccuranceOfChar1(str);
 		//printOccuranceOfChar2(str);
 
-		printOccuranceOfChar3(str);
+		//printOccuranceOfChar3(str);
+		
+		//removeVowelsAndEmptySTR(str);
+		
+		double pi = 3.1455926535;
+		String formatted = String.format("%.2f", pi);
+		System.out.println(formatted); // Output: "3.14"
 
 
+
+	}
+
+	private static void removeVowelsAndEmptySTR(String str) {
+		//str = str.replaceAll(" ", "");
+		StringBuilder newStr = new StringBuilder("");
+		for(int i = 0; i < str.length(); i++) {
+			Character ch = str.charAt(i);
+			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == '0' || ch == 'u') {
+				continue;
+			}
+			newStr.append(ch);
+		}
+		System.out.println(newStr);
+
+		
+		str = str.replaceAll("[aeiouAEIOU]", "");
+		System.out.println(str);
+		
+		
+		
+		
 	}
 
 	private static void printOccuranceOfChar3(String str) {
