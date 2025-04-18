@@ -15,7 +15,7 @@ class TestNumbers {
 		
 		//List<Integer> numbers = new ArrayList<>(List.of(2, 1, 5, 6, 2, 3));
 		//List<Integer> numbers = new ArrayList<>(List.of(4, 3, 2));
-		List<Integer> numbers = new ArrayList<>(List.of(7,3,1,6,5,6));
+		List<Integer> numbers = new ArrayList<Integer>(List.of(7,3,1,6,5,6));
 
 		//List<Integer> numbers = List.of(7,3,1,6,5,6);
 

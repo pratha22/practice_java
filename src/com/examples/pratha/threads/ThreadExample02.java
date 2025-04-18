@@ -1,4 +1,4 @@
-package com.examples.pratha;
+package com.examples.pratha.threads;
 
 import java.io.IOException;
 
